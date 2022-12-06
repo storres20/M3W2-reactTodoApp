@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from "react-router-dom"
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function About() {
   return (
@@ -9,7 +9,7 @@ function About() {
         <NavLink to="/about/about-author">About Author</NavLink>
       </ul>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

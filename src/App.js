@@ -1,17 +1,17 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from "./components/Navbar";
-import TodoContainer from './components/TodoContainer'
-import About from "./pages/About"
-import AboutApp from "./pages/AboutApp";
-import AboutAuthor from "./pages/AboutAuthor";
-import NotMatch from "./pages/NotMatch"
+import Navbar from './components/Navbar';
+import TodoContainer from './components/TodoContainer';
+import About from './pages/About';
+import AboutApp from './pages/AboutApp';
+import AboutAuthor from './pages/AboutAuthor';
+import NotMatch from './pages/NotMatch';
 
 function App() {
   return (
     <>
-      <Navbar/>
-      
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<TodoContainer />} />
         <Route path="/about" element={<About />} />
