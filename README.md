@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://storres20.github.io/M3W2-reactTodoApp/build)
+- [Live Demo Link](https://m3w2-todoapp.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
