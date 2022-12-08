@@ -1,10 +1,9 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-alert */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FaPlusCircle } from 'react-icons/fa';
 
-function InputTodo(props) {
+function InputTodo({ addTodoProps }) {
   const initialTitle = '';
 
   const [title, setTitle] = useState(initialTitle);
@@ -16,7 +15,7 @@ function InputTodo(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title.trim()) {
-      props.addTodoProps(title);
+      addTodoProps(title);
       setTitle('');
     } else { alert('Please write item'); }
   };
@@ -32,5 +31,9 @@ function InputTodo(props) {
     </form>
   );
 }
+
+InputTodo.propTypes = {
+  addTodoProps: PropTypes.func.isRequired,
+};
 
 export default InputTodo;
